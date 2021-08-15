@@ -32,9 +32,9 @@ We plan to cover the course in 2 sections
 1. Section 1 - Basics: From understanding to Production
 2. Section 2 - Advanced - Covering advanced cases and fine tuning.
 
-![roadmap1](images\roadmap1.JPG)
+![roadmap1](https://github.com/letsdocoding/efcore-definitive-course/blob/main/images/roadmap1.JPG)
 
-![roadmap2](images\roadmap2.JPG)
+![roadmap2](https://github.com/letsdocoding/efcore-definitive-course/blob/main/images/roadmap2.JPG)
 
 ## Index
 
