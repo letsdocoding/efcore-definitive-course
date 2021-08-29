@@ -36,7 +36,7 @@ We plan to cover the course in 2 sections
 
 ![roadmap2](https://github.com/letsdocoding/efcore-definitive-course/blob/main/images/roadmap2.JPG)
 
-## Index
+## Current Status and Index
 
 | Module            | Title                       | Status   | Youtube                                     | Code                                                         |
 | ----------------- | --------------------------- | -------- | ------------------------------------------- | ------------------------------------------------------------ |
