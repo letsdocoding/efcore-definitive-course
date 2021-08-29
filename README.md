@@ -41,7 +41,7 @@ We plan to cover the course in 2 sections
 | Module            | Title                       | Status   | Youtube                                     | Code                                                         |
 | ----------------- | --------------------------- | -------- | ------------------------------------------- | ------------------------------------------------------------ |
 | Module 1 - Part 1 | Quick Start & Introduction  | Complete | https://www.youtube.com/watch?v=JHzC5AXXlnE | [Source](src/Module%2001/Part%201%20-%20Starting%20with%20Console%20Project) |
-| Module 1 - Part 2 | Why Entity Framework        | WIP      |                                             | N/A                                                          |
+| Module 1 - Part 2 | Why Entity Framework        | Complete | https://youtu.be/d2NdCCW-_Ms                | N/A                                                          |
 | Module 1 - Part 3 | Design Infra for Production | Complete | https://www.youtube.com/watch?v=mmAqmrBDQSI | [Source](src/Module%2001/Part%203%20-%20Building%20Framework) |
 | Module 1 - Part 4 | Startup and Bootstrapping   | WIP      |                                             |                                                              |
 |                   |                             |          |                                             |                                                              |
