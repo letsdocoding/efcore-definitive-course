@@ -6,12 +6,13 @@ namespace HRMS.Dal
 {
     public class HrmsDbContext : DbContext
     {
+        private readonly IDbSpecificConfigurationProvider _dbSpecificConfigurationProvider;
         public DbSet<User> Users { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
-
-        public HrmsDbContext(DbContextOptions<HrmsDbContext> options) : base(options)
+        
+        public HrmsDbContext(DbContextOptions<HrmsDbContext> options, IDbSpecificConfigurationProvider  dbSpecificConfigurationProvider) : base(options)
         {
-
+            _dbSpecificConfigurationProvider = dbSpecificConfigurationProvider;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -33,6 +34,7 @@ namespace HRMS.Dal
                     ModifiedOn = new DateTimeOffset(2022, 05, 16, 0, 0, 0, TimeSpan.Zero)
                 }
             });
+            _dbSpecificConfigurationProvider.ConfigureDatabaseDependentExtensions(modelBuilder);
         }
     }
 }
