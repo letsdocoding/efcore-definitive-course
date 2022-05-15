@@ -13,8 +13,8 @@ namespace HRMS.Dal.Migrations.MsSql
             /**********Step 2. Customizing Configuration************/
             modelBuilder.Entity<User>().ToTable("Users", b => b.IsTemporal(builder =>
             {
-                builder.HasPeriodEnd("ValidFromStart");
-                builder.HasPeriodStart("ValidTillEnd");
+                builder.HasPeriodStart("PeriodStart");
+                builder.HasPeriodEnd("PeriodEnd");
                 builder.UseHistoryTable("UserChanges");
             }));
 
