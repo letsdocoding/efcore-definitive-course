@@ -45,6 +45,7 @@ namespace HRMS.API.Controllers
                     From = EF.Property<DateTime>(b, "PeriodStart"),
                     Till= EF.Property<DateTime>(b, "PeriodEnd"),
                 })
+                .OrderBy(x=>x.From)
                 .ToList();
             if (!user .Any())
             {
