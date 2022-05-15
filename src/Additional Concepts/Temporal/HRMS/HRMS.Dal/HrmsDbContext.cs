@@ -1,4 +1,5 @@
-﻿using HRMS.Dal.Contracts.Entities;
+﻿using System;
+using HRMS.Dal.Contracts.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HRMS.Dal
@@ -21,6 +22,16 @@ namespace HRMS.Dal
             {
                 new UserRole {UserRoleId = 1, RoleName = "user"},
                 new UserRole {UserRoleId = 2, RoleName = "manager"}
+            });
+            modelBuilder.Entity<User>().HasData(new User[]
+            {
+                new User()
+                {
+                    UserId = 1, FirstName = "Vineet", LastName = "Yadav", CreatedBy = "system",
+                    CreatedOn = new DateTimeOffset(2022, 05, 16, 0, 0, 0, TimeSpan.Zero), OfficeName = "DEL",
+                    DateOfBirth = new DateTime(2000, 01, 01), ModifiedBy = "",
+                    ModifiedOn = new DateTimeOffset(2022, 05, 16, 0, 0, 0, TimeSpan.Zero)
+                }
             });
         }
     }
