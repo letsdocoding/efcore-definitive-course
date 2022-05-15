@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30709.132
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS.Dal.Contracts", "HRMS.Dal.Contracts\HRMS.Dal.Contracts.csproj", "{14472466-B731-4F1B-A1B7-913CF2474E54}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS.Dal", "HRMS.Dal\HRMS.Dal.csproj", "{894C98C5-EDBE-43F8-97A6-B8F7897FC8CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS.API", "HRMS.API\HRMS.API.csproj", "{F91BD5E3-E7ED-4D50-9933-AAD3C4C13E12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS.API", "HRMS.API\HRMS.API.csproj", "{F91BD5E3-E7ED-4D50-9933-AAD3C4C13E12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS.Dal.Migrations.MySql", "HRMS.Dal.Migrations.MySql\HRMS.Dal.Migrations.MySql.csproj", "{0DCBB590-3410-42B2-B7EF-0192BD25A1EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS.Dal.Migrations.MsSql", "HRMS.Dal.Migrations.MsSql\HRMS.Dal.Migrations.MsSql.csproj", "{7E95B367-3F63-4077-9F6E-B2C62D4E4253}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{F91BD5E3-E7ED-4D50-9933-AAD3C4C13E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F91BD5E3-E7ED-4D50-9933-AAD3C4C13E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F91BD5E3-E7ED-4D50-9933-AAD3C4C13E12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0DCBB590-3410-42B2-B7EF-0192BD25A1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0DCBB590-3410-42B2-B7EF-0192BD25A1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0DCBB590-3410-42B2-B7EF-0192BD25A1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0DCBB590-3410-42B2-B7EF-0192BD25A1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E95B367-3F63-4077-9F6E-B2C62D4E4253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E95B367-3F63-4077-9F6E-B2C62D4E4253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E95B367-3F63-4077-9F6E-B2C62D4E4253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E95B367-3F63-4077-9F6E-B2C62D4E4253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
