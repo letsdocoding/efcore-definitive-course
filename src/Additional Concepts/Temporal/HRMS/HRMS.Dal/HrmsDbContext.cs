@@ -15,6 +15,8 @@ namespace HRMS.Dal
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>().Property(b => b.OfficeName).HasDefaultValue(null);
+
             modelBuilder.Entity<UserRole>().HasData(new UserRole[]
             {
                 new UserRole {UserRoleId = 1, RoleName = "user"},

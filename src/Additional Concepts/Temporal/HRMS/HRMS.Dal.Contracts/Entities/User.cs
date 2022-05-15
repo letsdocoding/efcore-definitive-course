@@ -8,6 +8,7 @@ namespace HRMS.Dal.Contracts.Entities
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string OfficeName { get; set; }
         public DateTime DateOfBirth { get; set; }
     }
 }
