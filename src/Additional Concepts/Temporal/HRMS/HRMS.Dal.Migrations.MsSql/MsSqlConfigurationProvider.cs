@@ -7,8 +7,16 @@ namespace HRMS.Dal.Migrations.MsSql
     {
         public void ConfigureDatabaseDependentExtensions(ModelBuilder modelBuilder)
         {
-            /**********Step 1. ************/
-            modelBuilder.Entity<User>().ToTable("Users", b => b.IsTemporal());
+            /**********Step 1. Basic Configuration************/
+            //modelBuilder.Entity<User>().ToTable("Users", b => b.IsTemporal());
+
+            /**********Step 2. Customizing Configuration************/
+            modelBuilder.Entity<User>().ToTable("Users", b => b.IsTemporal(builder =>
+            {
+                builder.HasPeriodEnd("ValidFromStart");
+                builder.HasPeriodStart("ValidTillEnd");
+                builder.UseHistoryTable("UserChanges");
+            }));
 
         }
     }
