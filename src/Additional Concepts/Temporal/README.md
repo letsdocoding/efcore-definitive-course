@@ -11,3 +11,18 @@ To be updated
 ## Setup
 
 1. Change the path of database file to your storage in appsettings.json
+
+
+
+## Commands
+
+Go to `HRMS.Dal.Migrations.MsSql` directory and following commands can be executed.
+
+#### Add Migration
+
+`dotnet ef  migrations add "<MIGRATION_NAME>" --startup-project ..\HRMS.API\HRMS.API.csproj`
+
+#### Update Database
+
+`dotnet ef   --startup-project ..\HRMS.API\HRMS.API.csproj database update`
+
