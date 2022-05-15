@@ -37,9 +37,9 @@ namespace HRMS.API
             var connectionString = Configuration.GetConnectionString("Hrms");
             services.AddDbContext<HrmsDbContext>(builder =>
             {
-                builder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString), options =>
+                builder.UseSqlServer(connectionString, options =>
                     {
-                        options.MigrationsAssembly("HRMS.Dal.Migrations.MySql");
+                        options.MigrationsAssembly("HRMS.Dal.Migrations.MsSql");
                     })
                     .EnableDetailedErrors()
                     //REMOVE WHEN MOVING OUT OF DEV
