@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using HRMS.API.Models;
 using HRMS.Dal;
-using HRMS.Dal.Contracts.Entities;
-using HRMS.Dal.Migrations.MsSql;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

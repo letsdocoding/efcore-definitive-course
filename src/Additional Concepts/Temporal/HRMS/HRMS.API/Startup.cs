@@ -1,18 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using HRMS.Dal;
-using HRMS.Dal.Migrations.MsSql;
+using HRMS.Dal.Migrations.MsSql.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace HRMS.API
@@ -31,7 +24,7 @@ namespace HRMS.API
         {
 
             services.AddControllers();
-            services.AddScoped<IDbSpecificConfigurationProvider, MsSqlConfigurationProvider>();
+            services.RegisterMySqlDbSpecificProvider();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HRMS.API", Version = "v1" });

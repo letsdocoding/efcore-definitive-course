@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HRMS.Dal.Contracts.Entities;
-using HRMS.Dal.Repositories;
+﻿using HRMS.Dal.Repositories;
 using HRMS.Dal.RepositoryImplementations;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +15,12 @@ namespace HRMS.Dal.Extensions
         public static IServiceCollection RegisterUnitOfWork(this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            return services;
+        }
+
+        public static IServiceCollection RegisterNoopDbSpecificProvider(this IServiceCollection services)
+        {
+            services.AddScoped<IDbSpecificConfigurationProvider, NoopDbProviderImplementation>();
             return services;
         }
     }

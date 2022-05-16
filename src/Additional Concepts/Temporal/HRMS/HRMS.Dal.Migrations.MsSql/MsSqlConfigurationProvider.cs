@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HRMS.Dal.Migrations.MsSql
 {
-    public class MsSqlConfigurationProvider : IDbSpecificConfigurationProvider
+    internal class MsSqlConfigurationProvider : IDbSpecificConfigurationProvider
     {
         public void ConfigureDatabaseDependentExtensions(ModelBuilder modelBuilder)
         {
