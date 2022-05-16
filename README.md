@@ -48,5 +48,5 @@ We plan to cover the course in 2 sections
 |                   |                             |             |                                             |                                                              |
 |                   |                             |             |                                             |                                                              |
 |                   |                             |             |                                             |                                                              |
-| Advanced Concepts | Temporal Working Demo       | CompleteWIP |                                             | [Source](src/Additional%20Concepts/Temporal)                 |
+| Advanced Concepts | Temporal Working Demo       | Complete    |WIP                                          | [Source](src/Additional%20Concepts/Temporal)                 |
 
