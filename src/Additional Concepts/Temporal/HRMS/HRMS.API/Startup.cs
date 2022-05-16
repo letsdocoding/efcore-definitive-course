@@ -24,7 +24,7 @@ namespace HRMS.API
         {
 
             services.AddControllers();
-            services.RegisterMySqlDbSpecificProvider();
+            services.RegisterMsSqlDbSpecificProvider();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HRMS.API", Version = "v1" });
